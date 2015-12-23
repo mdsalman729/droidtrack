@@ -1,6 +1,3 @@
-
-
-
 # Dynamic Race Detection tool for Android applications 
 #                                                 
 
@@ -17,6 +14,7 @@ The initial steps for downloading the Android source, compiling the Android sour
 2. To run the tool go to the Android top directory ( in my case- /home/salman_workspace/android_backup_droid/android). 
 3. If you need to compile the source code before running, then run the makerun.sh script which is located in the top directory.
 4. Once the source code has been compiled, you should be able to see the emulator command in the Android top directory. This command is exported by the build process and lets you    run the emulator. Sometimes, the build process has to be repeated to ensure the emulator command is exported. In this cases, just run the script again and it should work.
+
 ![mpp.png](https://bitbucket.org/repo/g6K6L4/images/1600596138-mpp.png)
  
 5. To run the emulator use the command – 
@@ -78,5 +76,6 @@ adb pull /data/data/org.tomdroid/abc_log.txt
 5. Presently, the happens before ordering between the enable and post events has been identified. We need to modify the post message in the handler.java code to send the object reference along with the posted message which can then be utilized in our backend tool to obtain a relation between the enable and post.  The implementation is not complete and we need to analyze the feasibility of such a modification.
 
 
+---------------------------------------------------------------------------------------------------------
    
 **In case of any queries regarding the setup and execution, reach out to mdsalman@vt.edu/md.salman729@gmail.com**
